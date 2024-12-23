@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Event Management App</h1>
+        <p>Track RSVPs for your events!</p>
+    </header>
+    <main>
+        <form id="event-form">
+            <label for="event-name">Event Name:</label>
+            <input type="text" id="event-name" placeholder="Enter event name" required>
+
+            <label for="attendee-name">Attendee Name:</label>
+            <input type="text" id="attendee-name" placeholder="Enter attendee name" required>
+
+            <label for="rsvp-status">RSVP Status:</label>
+            <select id="rsvp-status" required>
+                <option value="" disabled selected>Select status</option>
+                <option value="Attending">Attending</option>
+                <option value="Not Attending">Not Attending</option>
+                <option value="Maybe">Maybe</option>
+            </select>
+
+            <button type="button" id="add-rsvp">Add RSVP</button>
+        </form>
+
+        <section id="rsvp-list-section">
+            <h2>RSVP List</h2>
+            <table id="rsvp-list">
+                <thead>
+                    <tr>
+                        <th>Event Name</th>
+                        <th>Attendee</th>
+                        <th>RSVP Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- RSVP entries will appear here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

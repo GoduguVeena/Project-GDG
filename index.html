@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyCircle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>StudyCircle</h1>
+        <p>Join or create study groups to collaborate and learn together!</p>
+
+        <div class="form-container">
+            <input id="groupName" class="input-field" type="text" placeholder="Group Name">
+            <textarea id="groupDescription" class="input-field" placeholder="Group Description"></textarea>
+            <button class="btn" onclick="createGroup()">Create a Study Group</button>
+        </div>
+
+        <div id="groups" class="grid">
+            <!-- Groups will be displayed here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

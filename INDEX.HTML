@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poll Hub</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Vote for Your Favorite Programming Language</h1>
+
+        <form id="pollForm">
+            <label>
+                <input type="radio" name="language" value="JavaScript"> JavaScript
+            </label><br>
+            <label>
+                <input type="radio" name="language" value="Python"> Python
+            </label><br>
+            <label>
+                <input type="radio" name="language" value="Java"> Java
+            </label><br>
+            <label>
+                <input type="radio" name="language" value="C++"> C++
+            </label><br><br>
+
+            <button type="submit">Submit Vote</button>
+        </form>
+
+        <h2>Poll Results</h2>
+        <div id="results">
+            <p>JavaScript: 0</p>
+            <p>Python: 0</p>
+            <p>Java: 0</p>
+            <p>C++: 0</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

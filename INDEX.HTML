@@ -3,39 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Poll Hub</title>
-    <link rel="stylesheet" href="style.css">
+    <title>ChatHub</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Vote for Your Favorite Programming Language</h1>
-
-        <form id="pollForm">
-            <label>
-                <input type="radio" name="language" value="JavaScript"> JavaScript
-            </label><br>
-            <label>
-                <input type="radio" name="language" value="Python"> Python
-            </label><br>
-            <label>
-                <input type="radio" name="language" value="Java"> Java
-            </label><br>
-            <label>
-                <input type="radio" name="language" value="C++"> C++
-            </label><br><br>
-
-            <button type="submit">Submit Vote</button>
-        </form>
-
-        <h2>Poll Results</h2>
-        <div id="results">
-            <p>JavaScript: 0</p>
-            <p>Python: 0</p>
-            <p>Java: 0</p>
-            <p>C++: 0</p>
-        </div>
+    <div id="login">
+        <h2>Login</h2>
+        <input type="text" id="username" placeholder="Username">
+        <button onclick="login()">Login</button>
     </div>
-
+    <div id="chat" style="display:none;">
+        <h2>ChatHub</h2>
+        <div id="messages"></div>
+        <input type="text" id="messageInput" placeholder="Type a message">
+        <button onclick="sendMessage()">Send</button>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

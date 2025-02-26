@@ -3,20 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChatHub</title>
+    <title>TravelMate - Trip Planner</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="login">
-        <h2>Login</h2>
-        <input type="text" id="username" placeholder="Username">
-        <button onclick="login()">Login</button>
-    </div>
-    <div id="chat" style="display:none;">
-        <h2>ChatHub</h2>
-        <div id="messages"></div>
-        <input type="text" id="messageInput" placeholder="Type a message">
-        <button onclick="sendMessage()">Send</button>
+    <div class="container">
+        <header>
+            <h1>TravelMate</h1>
+            <h2>Your Trip Planner</h2>
+        </header>
+        <main>
+            <section id="trip-form">
+                <h3>Create a New Trip</h3>
+                <form id="tripForm">
+                    <label for="tripName">Trip Name:</label>
+                    <input type="text" id="tripName" name="tripName" required>
+                    <label for="destination">Destination:</label>
+                    <input type="text" id="destination" name="destination" required>
+                    <label for="startDate">Start Date:</label>
+                    <input type="date" id="startDate" name="startDate" required>
+                    <label for="endDate">End Date:</label>
+                    <input type="date" id="endDate" name="endDate" required>
+                    <button type="submit">Add Trip</button>
+                </form>
+            </section>
+            <section id="itinerary">
+                <h3>Your Itinerary</h3>
+                <ul id="tripList"></ul>
+            </section>
+        </main>
     </div>
     <script src="script.js"></script>
 </body>
